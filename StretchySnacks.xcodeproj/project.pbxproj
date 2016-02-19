@@ -12,6 +12,10 @@
 		AB03A0731C7628E600CBD387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB03A0711C7628E600CBD387 /* Main.storyboard */; };
 		AB03A0751C7628E600CBD387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB03A0741C7628E600CBD387 /* Assets.xcassets */; };
 		AB03A0781C7628E600CBD387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB03A0761C7628E600CBD387 /* LaunchScreen.storyboard */; };
+		AB03A09E1C76682100CBD387 /* oreos.png in Resources */ = {isa = PBXBuildFile; fileRef = AB03A09D1C76682100CBD387 /* oreos.png */; };
+		AB03A0A01C76684100CBD387 /* Stretchy-NavBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB03A09F1C76684100CBD387 /* Stretchy-NavBar.xcassets */; };
+		AB03A0A21C76832700CBD387 /* imageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB03A0A11C76832700CBD387 /* imageView.swift */; };
+		AB03A0A41C769B7D00CBD387 /* SnackCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB03A0A31C769B7D00CBD387 /* SnackCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		AB03A0741C7628E600CBD387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB03A0771C7628E600CBD387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB03A0791C7628E600CBD387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB03A09D1C76682100CBD387 /* oreos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oreos.png; sourceTree = "<group>"; };
+		AB03A09F1C76684100CBD387 /* Stretchy-NavBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Stretchy-NavBar.xcassets"; sourceTree = "<group>"; };
+		AB03A0A11C76832700CBD387 /* imageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageView.swift; sourceTree = "<group>"; };
+		AB03A0A31C769B7D00CBD387 /* SnackCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnackCellTableViewCell.swift; path = ../SnackCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				AB03A06D1C7628E600CBD387 /* AppDelegate.swift */,
+				AB03A0A31C769B7D00CBD387 /* SnackCellTableViewCell.swift */,
 				AB03A06F1C7628E600CBD387 /* ViewController.swift */,
+				AB03A0A11C76832700CBD387 /* imageView.swift */,
+				AB03A09F1C76684100CBD387 /* Stretchy-NavBar.xcassets */,
+				AB03A09D1C76682100CBD387 /* oreos.png */,
 				AB03A0711C7628E600CBD387 /* Main.storyboard */,
 				AB03A0741C7628E600CBD387 /* Assets.xcassets */,
 				AB03A0761C7628E600CBD387 /* LaunchScreen.storyboard */,
@@ -96,6 +108,7 @@
 				TargetAttributes = {
 					AB03A0691C7628E600CBD387 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9QSWA6BJVQ;
 					};
 				};
 			};
@@ -122,9 +135,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB03A09E1C76682100CBD387 /* oreos.png in Resources */,
 				AB03A0781C7628E600CBD387 /* LaunchScreen.storyboard in Resources */,
 				AB03A0751C7628E600CBD387 /* Assets.xcassets in Resources */,
 				AB03A0731C7628E600CBD387 /* Main.storyboard in Resources */,
+				AB03A0A01C76684100CBD387 /* Stretchy-NavBar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB03A0701C7628E600CBD387 /* ViewController.swift in Sources */,
+				AB03A0A21C76832700CBD387 /* imageView.swift in Sources */,
+				AB03A0A41C769B7D00CBD387 /* SnackCellTableViewCell.swift in Sources */,
 				AB03A06E1C7628E600CBD387 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,10 +264,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StretchySnacks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lighthouse.StretchySnacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StretchySnacks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lighthouse.StretchySnacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
